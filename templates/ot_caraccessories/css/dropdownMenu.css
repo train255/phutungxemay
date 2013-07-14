@@ -1,0 +1,350 @@
+/**
+ # ot_caraccessories -   OT Car Accessories Template for Joomla 2.5!
+ # author       OmegaTheme.com
+ # copyright     Copyright(C) 2012 - OmegaTheme.com. All Rights Reserved.
+ # @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Website:     http://omegatheme.com
+ # Technical     support: Forum - http://omegatheme.com/forum/
+ **/
+ /**------------------------------------------------------------------------
+ * file: dropdownMenu.css 2.5.0 00001, Oct 2012 12:00:00Z OmegaTheme $
+ * package:  OT Car Accessories Template
+ *------------------------------------------------------------------------*/
+ 
+ @font-face {
+  font-family: 'Oswald';
+  src: url("fonts/Oswald.ttf");
+}
+#ot-mainmenu, 
+#ot-mainmenu ul.level0{
+  font-size: 14px;
+  line-height: 43px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  /*padding: 0 10px;*/
+  margin: 0;
+}
+#ot-mainmenu li,
+#ot-mainmenu li li { /* all list items */
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* -------- Top level -------- */
+#ot-mainmenu ul.level0 {
+  float: right;
+  margin: 0px;
+  padding: 1px 0px 0px;
+  height: 44px;
+  background: #FFFFFF;
+}
+#ot-mainmenu ul.level0 li .menu_round {
+  float: left;
+  margin: 0 0 0 0px;
+  padding: 0 0 0 0px;
+}
+
+#ot-mainmenu ul.level0 li {
+  background: none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#ot-mainmenu ul.level0 li .menu_round,
+#ot-mainmenu ul.level0 li .menu_round .menu_round{
+  width: 205px;
+  position: absolute;
+  z-index: 119;
+  height: auto;
+}
+#ot-mainmenu ul.level0 li .menu_round,
+#ot-mainmenu ul.level0 li .menu_round .menu_round,
+#ot-mainmenu ul.level0 li.sfhover .menu_round .menu_round{
+  left: -999em;
+}
+#ot-mainmenu ul.level0 li .menu_round,
+#ot-mainmenu ul.level0 li.sfhover .menu_round{
+  margin: 0px;
+}
+#ot-mainmenu ul.level0 li .menu_round .menu_round,
+#ot-mainmenu ul.level0 li.sfhover .menu_round .menu_round{
+  margin: -29px 0 0 205px; 
+  padding: 0;
+}
+#ot-mainmenu ul.level0 li li {
+  padding: 0;
+  margin: 0;
+  width: 205px;
+}
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#ot-mainmenu ul.level0 li {
+    margin: 0px;
+  padding: 0px ;
+}
+#ot-mainmenu ul.level0 li.level0{
+    height: 44px;
+    line-height: 43px;
+}
+#ot-mainmenu ul.level0 li.level0.parent{
+  
+}
+#ot-mainmenu ul.level0 li a {
+  color: #333333;
+    display: block;
+    font-size: 14px;
+  margin: 0;
+    padding: 0px 15px;
+    text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  z-index: 120;
+}
+#ot-mainmenu ul.level0 li.parent a span{
+}
+#ot-mainmenu ul.level0 li.parent.sfhover a span,
+#ot-mainmenu ul.level0 li.active.parent a span{
+  
+}
+#ot-mainmenu ul.level0 li a span{
+  padding: 0;
+}
+#ot-mainmenu ul.level0 li.active,
+#ot-mainmenu ul.level0 li.sfhover,
+#ot-mainmenu ul.level0 li:hover{
+  background: url("../images/menu-active.png") top center no-repeat #0E0E0E;
+}
+#ot-mainmenu ul.level0 li.parent.sfhover{
+  
+}
+#ot-mainmenu ul.level0 li.active a,
+#ot-mainmenu ul.level0 li.sfhover a{
+    color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+#ot-mainmenu ul.level0 li.parent.sfhover a{
+}
+#ot-mainmenu ul.level0 li.parent a span{
+  
+}
+#ot-mainmenu ul.level0 li.first,
+#ot-mainmenu ul.level0 li.first a{
+  
+}
+#ot-mainmenu ul.level0 li.first a{
+}
+#ot-mainmenu ul.level0 li.first{
+  padding-left: 0;
+}
+#ot-mainmenu ul.level0 li.last,
+#ot-mainmenu ul.level0 li.last a{
+  
+}
+#ot-mainmenu ul.level0 li.last a{
+}
+#ot-mainmenu ul.level0 li:hover,
+#ot-mainmenu ul.level0 li.active,
+#ot-mainmenu ul.level0 li.sfhover{
+  
+}
+#ot-mainmenu ul.level0 li a:hover,
+#ot-mainmenu ul.level0 li.active a,
+#ot-mainmenu ul.level0 li.active a:hover,
+#ot-mainmenu ul.level0 li.sfhover a{
+
+}
+/* 2nd level and above */
+#ot-mainmenu ul.level0 ul{  
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 0px;
+  position: relative;
+  top: 0;
+}
+#ot-mainmenu ul.level0 ul ul{
+  padding: 0;
+  border: 0;
+}
+#ot-mainmenu ul.level0 li li{
+  margin: 0px;
+  padding: 0 0 0 0px;
+  line-height: 28px;
+}
+#ot-mainmenu ul.level0 li .menu_round,
+#ot-mainmenu ul.level0 li.sfhover .menu_round{
+  background: #0E0E0E;
+  padding: 0;
+  /*-moz-box-shadow: 1px 1px 1px #bebebe;
+  -webkit-box-shadow: 1px 1px 1px #bebebe;
+  box-shadow: 1px 1px 1px #bebebe;*/
+  /* For IE 8 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#666666')";*/
+  /* For IE 5.5 - 7 
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#666666');*/
+}
+#ot-mainmenu li .menu_top,
+#ot-mainmenu li .menu_mid,
+#ot-mainmenu li .menu_bot{
+  width: 100%;
+  float: left;
+}
+#ot-mainmenu li .menu_mid{
+  margin-top: 0!important;
+}
+#ot-mainmenu li .menu_top{
+  height: 0px;
+}
+#ot-mainmenu li li .menu_top{
+  height: 0px;
+}
+#ot-mainmenu li .menu_bot{
+  height: 0px;
+}
+#ot-mainmenu li .menu_mid{
+  
+}
+#ot-mainmenu ul.level0 li li{
+  width: 205px;
+  padding: 0;
+}
+#ot-mainmenu ul.level0 li.parent li.sfhover,
+#ot-mainmenu ul.level0 li.parent li.parent .sfhover,
+#ot-mainmenu ul.level0 li.parent ul.level1 li.current,
+#ot-mainmenu ul.level0 li.parent ul.level1 li.active{
+  background: #319994;
+}
+#ot-mainmenu ul.level0 li.parent li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent a span,
+#ot-mainmenu ul.level0 li.parent.sfhover li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent.sfhover li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent.sfhover li.parent a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent.sfhover li.parent a span{
+    
+}
+#ot-mainmenu ul.level0 li.parent li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li a span,
+#ot-mainmenu ul.level0 li.parent.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent li.parent.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent.sfhover li a span{
+  
+}
+#ot-mainmenu ul.level0 li.parent li.first,
+#ot-mainmenu ul.level0 li.parent li.first a{
+
+}
+#ot-mainmenu ul.level0 li.parent ul li{
+  border: 0;
+  padding: 0;
+}
+#ot-mainmenu ul.level0 li.parent ul li.parent{
+  background: url("../images/arrowbold.png") 180px center no-repeat;
+}
+#ot-mainmenu ul.level0 li.parent ul li.parent.sfhover,
+#ot-mainmenu ul.level0 li.parent ul li.parent.active{
+  background: url("../images/arrowbold.png") 180px center no-repeat #319994;
+}
+#ot-mainmenu ul.level0 li.parent ul li a,
+#ot-mainmenu ul.level0 li.parent ul li.parent ul li a,
+#ot-mainmenu ul.level0 li.parent.sfhover ul li a,
+#ot-mainmenu ul.level0 li.parent.sfhover ul li.parent ul li a {
+  cursor: pointer;
+  display: block;
+  font-family: Tahoma;
+  text-transform: capitalize;
+  height: auto;
+  margin: 0 20px;
+  padding: 0;
+  width: auto;
+  background: none;
+  border-bottom: 1px solid #323232;
+  color: #FFFFFF;
+}
+#ot-mainmenu ul.level0 li.parent.sfhover ul li.last a,
+#ot-mainmenu ul.level0 li.parent.sfhover ul li.parent ul li.last a {
+  border: 0;
+}
+#ot-mainmenu ul.level0 li.parent ul li a span,
+#ot-mainmenu ul.level0 li.parent.sfhover ul li a span,
+#ot-mainmenu ul.level0 li.active.parent ul li a span{
+  background: none repeat scroll 0 0 transparent;
+  display: block;
+  height: auto;
+  padding: 0px;
+}
+#ot-mainmenu ul.level0 li.parent ul li.sfhover a span,
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li.sfhover a span,
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li.sfhover li.sfhover a span{
+  
+}
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li.sfhover li a span,
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li.sfhover li.sfhover li a span{
+  
+}#ot-mainmenu ul.level0 li.parent.sfhover ul li.active a,
+#ot-mainmenu ul.level0 li.parent.sfhover ul li.parent ul li.active a,
+#ot-mainmenu ul.level0 li.parent ul li.active a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active li.active a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active li.active li.active a{
+  
+}
+#ot-mainmenu ul.level0 li.parent ul li.sfhover li a,
+#ot-mainmenu ul.level0 li.parent ul li.active li a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active li a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active li.active li a,
+#ot-mainmenu ul.level0 li.parent ul li.active li.active li.active li.active li.active li a{
+  
+}
+#ot-mainmenu ul.level0 li.parent ul li.sfhover a,
+#ot-mainmenu ul.level0 li.parent ul li a:hover,
+#ot-mainmenu ul.level0 li.parent ul li.parent li a:hover,
+#ot-mainmenu ul.level0 li.parent ul li.parent li.parent li a:hover,
+#ot-mainmenu ul.level0 li.parent ul li.active li a:hover{
+  
+}
+#ot-mainmenu ul.level0 li.parent li.parent a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li.parent a{
+  
+}
+#ot-mainmenu ul.level0 li.parent li.parent a:hover,
+#ot-mainmenu ul.level0 li.parent li.parent.sfhover a:hover,
+#ot-mainmenu ul.level0 li.parent li.parent li.sfhover a:hover,
+#ot-mainmenu ul.level0 li.parent li.parent.active a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent.active a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent.active a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent.active a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li.parent.active a{
+  
+}
+#ot-mainmenu ul.level0 li.parent li.parent li a:hover,
+#ot-mainmenu ul.level0 li.parent li.parent.sfhover li a:hover,
+#ot-mainmenu ul.level0 li.parent li.parent li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li.parent li a,
+#ot-mainmenu ul.level0 li.parent li.parent.active li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent.active li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent.active li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent.active li a,
+#ot-mainmenu ul.level0 li.parent li.parent li.parent li.parent li.parent li.parent.active li a{
+  
+}

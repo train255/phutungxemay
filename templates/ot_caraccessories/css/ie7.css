@@ -1,0 +1,39 @@
+/**
+ # ot_caraccessories - 	OT Car Accessories Template for Joomla 2.5!
+ # author 			OmegaTheme.com
+ # copyright 		Copyright(C) 2012 - OmegaTheme.com. All Rights Reserved.
+ # @license 		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Website: 		http://omegatheme.com
+ # Technical 		support: Forum - http://omegatheme.com/forum/
+ **/
+ /**------------------------------------------------------------------------
+ * file: ie7.css 2.5.0 00001, October 2012 12:00:00Z OmegaTheme $
+ * package:	OT Car Accessories Template
+ *------------------------------------------------------------------------*/
+
+
+
+@font-face {
+	font-family: 'Oswald';
+	src: url("fonts/Oswald.eot");
+}
+a{
+	ie-dummy: expression(this.hideFocus=true);
+}
+.ot-headertop form.default-search input#mod-search-searchword{
+	
+}
+.ot-headertop form.default-search input.button{	
+	height: 29px;
+}
+a.itemCommentsLink {
+	margin: -6px 8px 0 4px;
+}
+.latestItemView{
+	margin-top: 0px !important;
+}
+div.browse-view .orderby-displaynumber{
+	float: right;
+	width: 35%;
+	top: -50px;
+}

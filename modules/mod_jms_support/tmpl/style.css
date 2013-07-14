@@ -1,0 +1,111 @@
+/**
+ * @package JMS Support Online module
+ * @version 2.0
+ * @author JoomMasterS team
+ * @Copyright (coffee) 2009 - 2013 JoomMasterS.
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @Website: http://www.joommasters.com
+*/
+
+div.supporter {
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+div.supporter.first-item {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.support-name {
+  color: #333;
+  display: block;
+  font-size: 110%;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+div.supporter div.contact {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+div.supporter div.contact span {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+div.supporter div.contact span a {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  padding: 5px 6px;
+}
+
+div.supporter div.contact span a:hover,
+div.supporter div.contact span a:focus,
+div.supporter div.contact span a:active {
+  border-color: #999;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+div.supporter div.tel {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+div.supporter div.email {
+  color: #666;
+}
+
+/* Show full */
+div.supporter.show-full div {
+}
+
+div.supporter.show-full img {
+  margin-right: 5px;
+}
+
+div.supporter.show-full span {
+  display: block;
+}
+
+div.supporter.show-full span a {
+  display: inline-block;
+  padding: 3px 0;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+div.supporter.show-full span a:hover,
+div.supporter.show-full span a:focus,
+div.supporter.show-full span a:active {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+table.tborder {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+table.tborder .fieldset {
+  margin-bottom: 15px;
+}
+
+table.tborder a {
+  color: #069;
+  text-decoration: none;
+}
+
+table.tborder a:hover,
+table.tborder a:focus,
+table.tborder a:active {
+  color: #c00;
+}

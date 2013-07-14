@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="install">
+<name>JMS Support Online</name>
+<author>JoomMasterS</author>
+<creationDate>May 2013</creationDate>
+<copyright>Joommasters.com</copyright>
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<authorEmail>Joommasters@gmail.com</authorEmail> 
+<authorUrl>joommasters.com</authorUrl> 
+<version>2.0</version> 
+<description>
+<![CDATA[<span style="color: #008000;"><strong>The Jms Support Online module displays online status for SKYPE, MSN, AIM, ICQ, YAHOO and allow user contact with supporter by click on the status. You can check here</strong></span><br /></span>]]>
+</description>
+<files>
+	<filename module="mod_jms_support">mod_jms_support.php</filename>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<filename>sendmessage.php</filename>
+	<folder>tmpl</folder>
+	<folder>images</folder>
+	<filename>en-GB.mod_jms_support.ini</filename>
+</files>
+<languages>
+	<language tag="en-GB">en-GB.mod_jms_support.ini</language>
+</languages>
+
+
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="supportername" type="radio" default="1" class="btn-group" label="JMS_SUPPORT_BASIC_SUPPORTER_NAME"	description="JMS_SUPPORT_BASIC_SUPPORTER_NAME_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>			
+			<field name="display" class="btn-group" type="radio" default="1" label="JMS_SUPPORT_BASIC_WITH_ADDRESS" description="JMS_SUPPORT_BASIC_WITH_ADDRESS_DESC">			
+				<option value="0">Icon only</option>
+				<option value="1">With address</option>
+			</field>
+			<field name="cf_yahoo" type="radio" class="btn-group" default="1" label="JMS_SUPPORT_BASIC_SHOW_YAHOO_STATUS" description="JMS_SUPPORT_BASIC_SHOW_YAHOO_STATUS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_skype" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_SKYPE_STATUS" description="JMS_SUPPORT_BASIC_SHOW_SKYPE_STATUS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_aim" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_AIM_STATUS" description="JMS_SUPPORT_BASIC_SHOW_AIM_STATUS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_msn" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_MSN_STATUS" description="JMS_SUPPORT_BASIC_SHOW_MSN_STATUS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_icq" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_ICQ_STATUS" description="JMS_SUPPORT_BASIC_SHOW_ICQ_STATUS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_tel" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_TELEPHONE" description="JMS_SUPPORT_BASIC_SHOW_TELEPHONE_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field class="btn-group" name="cf_email" type="radio" default="1" label="JMS_SUPPORT_BASIC_SHOW_EMAIL" description="JMS_SUPPORT_BASIC_SHOW_EMAIL_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="Supporter1">	
+			<field name="support1" type="text" default="" label="JMS_SUPPORT_1_SUPPORT_NAME" description="JMS_SUPPORT_1_SUPPORT_NAME_DESC"></field>
+			<field name="yahoo1" type="text" default="" label="JMS_SUPPORT_1_YAHOO" description="JMS_SUPPORT_1_YAHOO_DESC"></field>			
+			<field name="skype1" type="text" default="" label="JMS_SUPPORT_1_SKYPE" description="JMS_SUPPORT_1_SKYPE_DESC"></field>
+			<field name="aim1" type="text" default="" label="JMS_SUPPORT_1_AIM" description="JMS_SUPPORT_1_AIM_DESC"></field>
+			<field name="msn1" type="text" default="" label="JMS_SUPPORT_1_MSN" description="JMS_SUPPORT_1_MSN_DESC"></field>
+			<field name="icq1" type="text" default="" label="JMS_SUPPORT_1_ICQ" description="JMS_SUPPORT_1_ICQ_DESC"></field>
+			<field name="tel1" type="text" default="" label="JMS_SUPPORT_1_TELEPHONE" description="JMS_SUPPORT_1_TELEPHONE_DESC"></field>
+			<field name="email1" type="text" default="" label="JMS_SUPPORT_1_EMAIL" description="JMS_SUPPORT_1_EMAIL_DESC"></field>		
+		</fieldset>	
+		
+		<fieldset name="Supporter2">	
+			<field name="support2" type="text" default="" label="JMS_SUPPORT_2_SUPPORT_NAME" description="JMS_SUPPORT_2_SUPPORT_NAME_DESC"></field>
+			<field name="yahoo2" type="text" default="" label="JMS_SUPPORT_2_YAHOO" description="JMS_SUPPORT_2_YAHOO_DESC"></field>			
+			<field name="skype2" type="text" default="" label="JMS_SUPPORT_2_SKYPE" description="JMS_SUPPORT_2_SKYPE_DESC"></field>
+			<field name="aim2" type="text" default="" label="JMS_SUPPORT_2_AIM" description="JMS_SUPPORT_2_AIM_DESC"></field>
+			<field name="msn2" type="text" default="" label="JMS_SUPPORT_2_MSN" description="JMS_SUPPORT_2_MSN_DESC"></field>
+			<field name="icq2" type="text" default="" label="JMS_SUPPORT_2_ICQ" description="JMS_SUPPORT_2_ICQ_DESC"></field>
+			<field name="tel2" type="text" default="" label="JMS_SUPPORT_2_TELEPHONE" description="JMS_SUPPORT_2_TELEPHONE_DESC"></field>
+			<field name="email2" type="text" default="" label="JMS_SUPPORT_2_EMAIL" description="JMS_SUPPORT_2_EMAIL_DESC"></field>		
+		</fieldset>	
+		
+		<fieldset name="Supporter3">	
+			<field name="support3" type="text" default="" label="JMS_SUPPORT_3_SUPPORT_NAME" description="JMS_SUPPORT_3_SUPPORT_NAME_DESC"></field>
+			<field name="yahoo3" type="text" default="" label="JMS_SUPPORT_3_YAHOO" description="JMS_SUPPORT_3_YAHOO_DESC"></field>			
+			<field name="skype3" type="text" default="" label="JMS_SUPPORT_3_SKYPE" description="JMS_SUPPORT_3_SKYPE_DESC"></field>
+			<field name="aim3" type="text" default="" label="JMS_SUPPORT_3_AIM" description="JMS_SUPPORT_3_AIM_DESC"></field>
+			<field name="msn3" type="text" default="" label="JMS_SUPPORT_3_MSN" description="JMS_SUPPORT_3_MSN_DESC"></field>
+			<field name="icq3" type="text" default="" label="JMS_SUPPORT_3_ICQ" description="JMS_SUPPORT_3_ICQ_DESC"></field>
+			<field name="tel3" type="text" default="" label="JMS_SUPPORT_3_TELEPHONE" description="JMS_SUPPORT_3_TELEPHONE_DESC"></field>
+			<field name="email3" type="text" default="" label="JMS_SUPPORT_3_EMAIL" description="JMS_SUPPORT_3_EMAIL_DESC"></field>			
+		</fieldset>	
+		
+		<fieldset name="Supporter4">	
+			<field name="support4" type="text" default="" label="JMS_SUPPORT_4_SUPPORT_NAME" description="JMS_SUPPORT_4_SUPPORT_NAME_DESC"></field>
+			<field name="yahoo4" type="text" default="" label="JMS_SUPPORT_4_YAHOO" description="JMS_SUPPORT_4_YAHOO_DESC"></field>			
+			<field name="skype4" type="text" default="" label="JMS_SUPPORT_4_SKYPE" description="JMS_SUPPORT_4_SKYPE_DESC"></field>
+			<field name="aim4" type="text" default="" label="JMS_SUPPORT_4_AIM" description="JMS_SUPPORT_4_AIM_DESC"></field>
+			<field name="msn4" type="text" default="" label="JMS_SUPPORT_4_MSN" description="JMS_SUPPORT_4_MSN_DESC"></field>
+			<field name="icq4" type="text" default="" label="JMS_SUPPORT_4_ICQ" description="JMS_SUPPORT_4_ICQ_DESC"></field>
+			<field name="tel4" type="text" default="" label="JMS_SUPPORT_4_TELEPHONE" description="JMS_SUPPORT_4_TELEPHONE_DESC"></field>
+			<field name="email4" type="text" default="" label="JMS_SUPPORT_4_EMAIL" description="JMS_SUPPORT_4_EMAIL_DESC"></field>		
+		</fieldset>	
+		
+		<fieldset name="Supporter5">	
+			<field name="support5" type="text" default="" label="JMS_SUPPORT_5_SUPPORT_NAME" description="JMS_SUPPORT_5_SUPPORT_NAME_DESC"></field>
+			<field name="yahoo5" type="text" default="" label="JMS_SUPPORT_5_YAHOO" description="JMS_SUPPORT_5_YAHOO_DESC"></field>			
+			<field name="skype5" type="text" default="" label="JMS_SUPPORT_5_SKYPE" description="JMS_SUPPORT_5_SKYPE_DESC"></field>
+			<field name="aim5" type="text" default="" label="JMS_SUPPORT_5_AIM" description="JMS_SUPPORT_5_AIM_DESC"></field>
+			<field name="msn5" type="text" default="" label="JMS_SUPPORT_5_MSN" description="JMS_SUPPORT_5_MSN_DESC"></field>
+			<field name="icq5" type="text" default="" label="JMS_SUPPORT_5_ICQ" description="JMS_SUPPORT_5_ICQ_DESC"></field>
+			<field name="tel5" type="text" default="" label="JMS_SUPPORT_5_TELEPHONE" description="JMS_SUPPORT_5_TELEPHONE_DESC"></field>
+			<field name="email5" type="text" default="" label="JMS_SUPPORT_5_EMAIL" description="JMS_SUPPORT_5_EMAIL_DESC"></field>		
+		</fieldset>
+		
+		<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+		</fieldset>	
+	</fields>
+</config>
+</extension>
