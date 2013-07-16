@@ -21,7 +21,7 @@
   line-height: 43px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-style: oblique;
-  /*padding: 0 10px;*/
+/*  padding: 0 10px;*/
   margin: 0;
 }
 #ot-mainmenu li,
@@ -32,7 +32,7 @@
 }
 /* -------- Top level -------- */
 #ot-mainmenu ul.level0 {
-  float: right;
+/*  float: right;*/
   margin: 0px;
   padding: 1px 0px 0px;
   height: 44px;
