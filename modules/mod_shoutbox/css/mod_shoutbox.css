@@ -92,3 +92,20 @@ vertical-align: middle;
 .website {
 	display: none;
 }
+
+#lblName,
+#lblText {
+	float: left;
+	clear: both;
+}
+
+#chatbarText,
+#shoutboxname {
+	float: right;
+	margin-top: 8px;
+	min-width: 200px;
+}
+
+textarea {
+	resize: none;
+}

@@ -3,6 +3,8 @@ defined('_JEXEC') or die('Restricted access');
 //JHTML::stylesheet ( 'menucss.css', 'modules/mod_virtuemart_category/css/', false );
 ?>
 
+<div id='cssmenu'>
+
 <ul class="menu<?php echo $class_sfx ?>" >
 <?php $i = 0; ?>
 <?php foreach ($categories as $category) {
@@ -13,17 +15,15 @@ defined('_JEXEC') or die('Restricted access');
 		if (in_array( $category->virtuemart_category_id, $parentCategories)) $active_menu = 'active';
 		if ($i==0) $active_menu = $active_menu . " first";
 		if ($i==(count($categories)-1)) $active_menu = $active_menu . " last";
+		if ($category->childs ) $active_menu = $active_menu . " has-sub";
 		$i++;
-		?>
+?>
 
 <li class="<?php echo $active_menu ?>">
 	<div>
 		<?php echo JHTML::link($caturl, $cattext); ?>
 	</div>
-<?php if ($category->childs ) {
-
-
-?>
+<?php if ($category->childs ) { ?>
 <ul class="menu<?php echo $class_sfx; ?>">
 <?php
 	foreach ($category->childs as $child) {
@@ -41,3 +41,5 @@ defined('_JEXEC') or die('Restricted access');
 <?php
 	} ?>
 </ul>
+
+</div>
